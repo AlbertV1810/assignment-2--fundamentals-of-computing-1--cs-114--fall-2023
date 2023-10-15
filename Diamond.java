@@ -9,7 +9,7 @@ public class Diamond {
     {
       for(int spaceInput = 0; spaceInput<diamondInput; spaceInput+=2)
       {
-        for(int charInput = 0; charInput<diamondInput-spaceInput/2; charInput++)
+        for(int charInput = 0; charInput<diamondInput/2-spaceInput/2; charInput++)
         {
           System.out.print(" ");
         }
