@@ -9,13 +9,13 @@ public class Diamond {
     {
       for(int spaceInput = 0; spaceInput<diamondInput; spaceInput+=2)
       {
-        for(int charInput = 0; charInput<diamondInput-spaceInput; charInput++)
+        for(int charInput = 0; charInput<diamondInput-spaceInput/2; charInput++)
         {
           System.out.print(" ");
         }
         for(int charInput=0; charInput<=spaceInput; charInput++)
         {
-          System.out.print("* ");
+          System.out.print("*");
         }
         System.out.println();
       }
