@@ -7,20 +7,30 @@ public class Diamond {
 
     if (diamondInput%2 == 1)
     {
-      for(int spaceInput = 0; spaceInput<diamondInput; spaceInput+=2)
+      for(int spaceChars = 0; spaceChars<diamondInput; spaceChars+=2)
       {
-        for(int charInput = 0; charInput<diamondInput/2-spaceInput/2; charInput++)
+        for(int charInput = 0; charInput<(diamondInput-spaceChars)/2; charInput++)
         {
           System.out.print(" ");
         }
-        for(int charInput=0; charInput<=spaceInput; charInput++)
+        for(int charInput=0; charInput<=spaceChars; charInput++)
         {
           System.out.print("*");
         }
         System.out.println();
       }
-
-
+      for(int spaceChars = diamondInput; spaceChars>0; spaceChars-=2)
+      {
+        for(int charInput = 0; charInput<(diamondInput-spaceChars)/2; charInput++)
+        {
+          System.out.print(" ");
+        }
+        for(int charInput=0; charInput<spaceChars; charInput++)
+        {
+          System.out.print("*");
+        }
+        System.out.println();
+      }
     }
 
     input.close();
