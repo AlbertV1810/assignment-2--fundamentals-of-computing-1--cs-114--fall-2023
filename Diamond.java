@@ -7,7 +7,7 @@ public class Diamond {
 
     if (diamondInput%2 == 1)
     {
-      for(int spaceInput = 0;spaceInput<diamondInput;spaceInput++)
+      for(int spaceInput = 0;spaceInput>=diamondInput/2;spaceInput--)
       {
         for(int charInput = 0;charInput<diamondInput-spaceInput;charInput++)
         {
@@ -15,11 +15,11 @@ public class Diamond {
         }
         for(int charInput=0;charInput<=spaceInput;charInput++)
         {
-          System.out.print("*");
+          System.out.print("* ");
         }
         System.out.println();
       }
-      
+
 
     }
 
