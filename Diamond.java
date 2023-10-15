@@ -6,7 +6,13 @@ public class Diamond {
     int diamondInput = input.nextInt();
 
     if (diamondInput%2 == 1){
-      for(int spaceInput = 0;  )
+      for(int spaceInput = 0;spaceInput<diamondInput;spaceInput++)
+      {
+        for(int charInput = 0;charInput<diamondInput-1;charInput++)
+        {
+            System.out.print(" ");
+        }
+      }
 
     }
 
