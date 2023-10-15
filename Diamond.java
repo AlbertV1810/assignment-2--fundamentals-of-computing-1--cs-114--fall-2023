@@ -7,9 +7,9 @@ public class Diamond {
 
     if (diamondInput%2 == 1)
     {
-      for(int spaceChars = 0; spaceChars<diamondInput; spaceChars+=2)
+      for(int spaceChars = 1; spaceChars<diamondInput; spaceChars+=2)
       {
-        for(int charInput = 0; charInput<(diamondInput-spaceChars)/2; charInput++)
+        for(int charInput = 0; charInput<diamondInput-1-spaceChars/2; charInput++)
         {
           System.out.print(" ");
         }
