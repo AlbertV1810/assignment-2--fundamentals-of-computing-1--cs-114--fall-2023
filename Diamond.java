@@ -13,7 +13,7 @@ public class Diamond {
         {
           System.out.print(" ");
         }
-        for(int charInput=0; charInput<=spaceChars; charInput++)
+        for(int charInput=0; charInput<spaceChars; charInput++)
         {
           System.out.print("*");
         }
