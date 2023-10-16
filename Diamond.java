@@ -34,7 +34,7 @@ public class Diamond {
     }
     else if(diamondInput%2==0)
     {
-      for(int spaceChars = 1; spaceChars<diamondInput; spaceChars+=2)
+      for(int spaceChars = 0; spaceChars<diamondInput; spaceChars+=2)
       {
         for(int charInput = 0; charInput<(diamondInput-spaceChars)/2; charInput++)
         {
