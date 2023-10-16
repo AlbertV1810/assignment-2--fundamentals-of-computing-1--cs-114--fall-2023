@@ -3,13 +3,13 @@ public class Diamond {
   public static void main(String[] args) {
     System.out.println("Enter a number: ");
     Scanner input = new Scanner(System.in);
-    int diamondInput = input.nextInt();
+    int diamondNum = input.nextInt();
 
-    if (diamondInput%2 == 1)
+    if (diamondNum%2 == 1)
     {
-      for(int spaceChars = 1; spaceChars<diamondInput; spaceChars+=2)
+      for(int spaceChars = 1; spaceChars<diamondNum; spaceChars+=2)
       {
-        for(int charOutput = 0; charOutput<(diamondInput-spaceChars)/2; charOutput++)//Ensures right number of spaces
+        for(int charOutput = 0; charOutput<(diamondNum-spaceChars)/2; charOutput++)//Ensures right number of spaces
         {
           System.out.print(" ");
         }
@@ -19,9 +19,9 @@ public class Diamond {
         }
         System.out.println();
       }
-      for(int spaceChars = diamondInput; spaceChars>0; spaceChars-=2)
+      for(int spaceChars = diamondNum; spaceChars>0; spaceChars-=2)
       {
-        for(int charOutput = 0; charOutput<(diamondInput-spaceChars)/2; charOutput++)
+        for(int charOutput = 0; charOutput<(diamondNum-spaceChars)/2; charOutput++)
         {
           System.out.print(" ");
         }
@@ -32,11 +32,11 @@ public class Diamond {
         System.out.println();
       }
     }
-    else if(diamondInput%2==0)
+    else if(diamondNum%2==0)
     {
-      for(int spaceChars = 1; spaceChars<diamondInput; spaceChars+=2)
+      for(int spaceChars = 1; spaceChars<diamondNum; spaceChars+=2)
       {
-        for(int charOutput = 0; charOutput<(diamondInput-1-spaceChars); charOutput++)
+        for(int charOutput = 0; charOutput<(diamondNum-1-spaceChars); charOutput++)
         {
           System.out.print(" ");
         }
@@ -46,9 +46,9 @@ public class Diamond {
         }
         System.out.println();
       }
-      for(int spaceChars = diamondInput-2; spaceChars>0; spaceChars-=2)
+      for(int spaceChars = diamondNum-2; spaceChars>0; spaceChars-=2)
       {
-        for(int charOutput = 0; charOutput<(diamondInput-spaceChars); charOutput++)
+        for(int charOutput = 0; charOutput<(diamondNum-spaceChars); charOutput++)
         {
           System.out.print(" ");
         }
