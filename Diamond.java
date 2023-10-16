@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Diamond {
   public static void main(String[] args) {
-    System.out.println("Enter input: ");
+    System.out.println("Enter a number: ");
     Scanner input = new Scanner(System.in);
     int diamondInput = input.nextInt();
 
@@ -9,11 +9,11 @@ public class Diamond {
     {
       for(int spaceChars = 1; spaceChars<diamondInput; spaceChars+=2)
       {
-        for(int charInput = 0; charInput<(diamondInput-spaceChars)/2; charInput++)//Make right number of spaces
+        for(int charOutput = 0; charOutput<(diamondInput-spaceChars)/2; charOutput++)//Make right number of spaces
         {
           System.out.print(" ");
         }
-        for(int charInput=0; charInput<spaceChars; charInput++)//Prints * depending on input
+        for(int charOutput=0; charOutput<spaceChars; charOutput++)//Prints * depending on input
         {
           System.out.print("*");
         }
@@ -21,11 +21,11 @@ public class Diamond {
       }
       for(int spaceChars = diamondInput; spaceChars>0; spaceChars-=2)
       {
-        for(int charInput = 0; charInput<(diamondInput-spaceChars)/2; charInput++)
+        for(int charOutput = 0; charOutput<(diamondInput-spaceChars)/2; charOutput++)
         {
           System.out.print(" ");
         }
-        for(int charInput=0; charInput<spaceChars; charInput++)
+        for(int charOutput=0; charOutput<spaceChars; charOutput++)
         {
           System.out.print("*");
         }
@@ -36,11 +36,11 @@ public class Diamond {
     {
       for(int spaceChars = 0; spaceChars<diamondInput; spaceChars+=2)
       {
-        for(int charInput = 0; charInput<(diamondInput-spaceChars)/2; charInput++)
+        for(int charOutput = 0; charOutput<(diamondInput-spaceChars)/2; charOutput++)
         {
           System.out.print("  ");
         }
-        for(int charInput=0; charInput<spaceChars; charInput++)
+        for(int charOutput = 0; charOutput<spaceChars; charOutput++)
         {
           System.out.print(" *");
         }
@@ -48,11 +48,11 @@ public class Diamond {
       }
       for(int spaceChars = diamondInput; spaceChars>0; spaceChars-=2)
       {
-        for(int charInput = 0; charInput<(diamondInput-spaceChars)/2; charInput++)
+        for(int charOutput = 0; charOutput<(diamondInput-spaceChars)/2; charOutput++)
         {
           System.out.print("  ");
         }
-        for(int charInput=0; charInput<spaceChars; charInput++)
+        for(int charOutput = 0; charOutput<spaceChars; charOutput++)
         {
           System.out.print(" *");
         }
