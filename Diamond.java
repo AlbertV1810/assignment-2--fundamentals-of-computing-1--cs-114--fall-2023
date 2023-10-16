@@ -36,7 +36,7 @@ public class Diamond {
     {
       for(int spaceChars = 1; spaceChars<diamondInput; spaceChars+=2)
       {
-        for(int charOutput = 0; charOutput<(diamondInput-spaceChars); charOutput++)
+        for(int charOutput = 0; charOutput<(diamondInput-1-spaceChars); charOutput++)
         {
           System.out.print(" ");
         }
