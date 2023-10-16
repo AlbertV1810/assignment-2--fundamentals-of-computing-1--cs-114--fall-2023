@@ -40,7 +40,7 @@ public class Diamond {
         {
           System.out.print("  ");
         }
-        for(int charOutput = 0; charOutput<spaceChars; charOutput++)
+        for(int charOutput = 0; charOutput<=spaceChars; charOutput++)
         {
           System.out.print(" *");
         }
