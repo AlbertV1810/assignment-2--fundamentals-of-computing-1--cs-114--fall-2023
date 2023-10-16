@@ -9,7 +9,7 @@ public class Diamond {
     {
       for(int spaceChars = 1; spaceChars<diamondInput; spaceChars+=2)
       {
-        for(int charOutput = 0; charOutput<(diamondInput-spaceChars)/2; charOutput++)//Make right number of spaces
+        for(int charOutput = 0; charOutput<(diamondInput-spaceChars)/2; charOutput++)//Ensures right number of spaces
         {
           System.out.print(" ");
         }
@@ -34,11 +34,11 @@ public class Diamond {
     }
     else if(diamondInput%2==0)
     {
-      for(int spaceChars = 0; spaceChars<diamondInput; spaceChars+=2)
+      for(int spaceChars = 1; spaceChars<diamondInput; spaceChars+=2)
       {
         for(int charOutput = 0; charOutput<(diamondInput-spaceChars)/2; charOutput++)
         {
-          System.out.print(" ");
+          System.out.print("  ");
         }
         for(int charOutput = 0; charOutput<spaceChars; charOutput++)
         {
@@ -50,7 +50,7 @@ public class Diamond {
       {
         for(int charOutput = 0; charOutput<(diamondInput-spaceChars)/2; charOutput++)
         {
-          System.out.print(" ");
+          System.out.print("  ");
         }
         for(int charOutput = 0; charOutput<spaceChars; charOutput++)
         {
